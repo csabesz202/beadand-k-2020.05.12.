@@ -1,0 +1,16 @@
+vector=[0,1,1,1,0,1,1,1,0,1,0,1,0,0,0];
+
+def sorozat_torles(elem, vector):
+    index=0
+    while(len(vector)!=0 and vector[index]== elem):
+        vector.remove(elem)
+    return vector
+
+def osszes_torlese(vector):
+    db =0
+    while(len(vector)!=0):
+        vector=sorozat_torles(vector[0],vector)
+        db+=1
+    print(db)
+
+osszes_torlese(vector)
