@@ -1,0 +1,12 @@
+tesztesetek = int(input("Tesztek száma: "))
+
+tesztelt_esetek_szama = 0
+
+while(tesztelt_esetek_szama < tesztesetek):
+  n = int(input("n= "))
+  m = int(input("m= "))
+  if(n*m % 2 == 0):
+    print("YES")
+  else:
+    print("NO")
+  tesztelt_esetek_szama += 1
