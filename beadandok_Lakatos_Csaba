@@ -1,0 +1,23 @@
+n=input("n= ")
+k=input("k= ")
+r=input("r= ")
+
+def lehetseges_szamparok(also, felso, eredmeny, hatar):
+    db=0
+    for i in range(hatar, felso+1):
+        if (also+i == eredmeny):
+            db+=1
+    return db
+
+def lehetseges_reprez(n,k,r):
+    also=int(k)
+    felso=int(r)
+    eredmeny=int(n)
+    hatar=felso-also+1
+    db=0
+    while(also<=hatar):
+        db+=lehetseges_szamparok(also, felso, eredmeny, hatar)
+        also+=1
+    print(db)
+
+lehetseges_reprez(n,k,r)a
